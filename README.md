@@ -16,12 +16,12 @@ cd travqdjango
 sudo vim settings.py
 
 
-# Inside settings.py modify these lines allowed host public IP address I for INSERT
+Inside settings.py modify these lines allowed host public IP address I for INSERT
 
 
 ALLOWED_HOSTS = ['<host ip>']
 
-# add the line below to the bottom of the file
+add the line below to the bottom of the file
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 
