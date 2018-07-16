@@ -56,18 +56,18 @@ sudo vim /etc/nginx/sites-available/travqdjango
 
 i
 
-server {
-  listen 80;
-  server_name _travqdjango;
-  location = /favicon.ico { access_log off; log_not_found off; }
-  location /static/ {
-      root /home/ubuntu/travqdjango;
-  }
-  location / {
-      include proxy_params;
-      proxy_pass http://unix:/home/ubuntu/travqdjango/travqdjango.sock;
-  }
-}
+> server {
+>   listen 80;
+>   server_name _travqdjango;
+>   location = /favicon.ico { access_log off; log_not_found off; }
+>   location /static/ {
+>       root /home/ubuntu/travqdjango;
+>   }
+>   location / {
+>       include proxy_params;
+>       proxy_pass http://unix:/home/ubuntu/travqdjango/travqdjango.sock;
+>   }
+> }
 
 ESC :wq
 
